@@ -1,5 +1,8 @@
 {
-    "lavavel":{
-        "phpVersion":"8.3"
+  "platform": "php",
+  "app": {
+    "php": {
+      "version": "8.3" 
     }
+  }
 }
