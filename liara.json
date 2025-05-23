@@ -1,8 +1,5 @@
 {
-  "platform": "php",
-  "app": {
-    "php": {
-      "version": "8.2"
-    }
+  "laravel":{
+    "phpVersion":"8.2"
   }
 }
