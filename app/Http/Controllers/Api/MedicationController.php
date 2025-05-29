@@ -16,8 +16,8 @@ class MedicationController extends Controller
     public function index(): JsonResponse
     {
         $user = Auth::user();
-        // این خط باید همیشه یک Collection برگرداند، حتی اگر خالی باشد
-        $medications = $user->medications()->get(); // اضافه کردن get() برای اطمینان از دریافت Collection
+        // این خط را دقیقاً به شکل زیر تغییر دهید یا مطمئن شوید که همین است
+        $medications = $user->medications()->get(); // <-- اضافه کردن ()->get
         return response()->json($medications);
     }
 
