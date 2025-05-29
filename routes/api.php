@@ -10,7 +10,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 // Protected Routes (Require JWT authentication)
-Route::middleware('auth:api')->group(function () {
+Route::middleware('auth:jwt')->group(function () { // <--- اینجا 'api' را به 'jwt' تغییر دهید
     // Auth Routes
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/refresh', [AuthController::class, 'refresh']);
